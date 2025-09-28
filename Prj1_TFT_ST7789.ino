@@ -11,11 +11,12 @@
 // Include các thư viện cần thiết
 #include <TFT_eSPI.h>
 #include "logoelab.h"
-#include "fullcolor.h"
-#include "colorfulnight.h"
 #include "demdaysao.h"
 #include "thescream.h"
 #include "vietnam.h"
+#include "onepiece.h"
+#include "zero2.h"
+#include "shin.h"
 
 TFT_eSPI tft = TFT_eSPI(); //Khởi tạo đối tượng tft
 
@@ -61,20 +62,23 @@ void loop() {
   //   tft.fillScreen(TFT_BLACK);
   // }
 
-  tft.pushImage(0, 0, 240, 240, fullcolor);
-  delay(1000);
-  tft.fillScreen(TFT_BLACK);
-  tft.pushImage(0, 0, 240, 240, colorfulnight);
-  delay(1000);
+  tft.pushImage(0, 0, 240, 240, vietnam);
+  delay(1500);
   tft.fillScreen(TFT_BLACK);
   tft.pushImage(0, 0, 240, 240, demdaysao);
-  delay(1000);
+  delay(1500);
   tft.fillScreen(TFT_BLACK);
   tft.pushImage(0, 0, 240, 240, thescream);
-  delay(1000);
+  delay(1500);
   tft.fillScreen(TFT_BLACK);
-  tft.pushImage(0, 0, 240, 240, vietnam);
-  delay(1000);
+  tft.pushImage(0, 0, 240, 240, onepiece);
+  delay(1500);
+  tft.fillScreen(TFT_BLACK);
+  tft.pushImage(0, 0, 240, 240, shin);
+  delay(1500);
+  tft.fillScreen(TFT_BLACK);
+  tft.pushImage(0, 0, 240, 240, zero2);
+  delay(2000);
   tft.fillScreen(TFT_BLACK);
   
 }
